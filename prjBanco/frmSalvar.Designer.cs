@@ -72,9 +72,8 @@ namespace prjBanco
             // 
             // txtID
             // 
-            this.txtID.Enabled = false;
             this.txtID.Location = new System.Drawing.Point(115, 37);
-            this.txtID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtID.Margin = new System.Windows.Forms.Padding(2);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(86, 20);
             this.txtID.TabIndex = 3;
@@ -82,7 +81,7 @@ namespace prjBanco
             // txtRazaoSocial
             // 
             this.txtRazaoSocial.Location = new System.Drawing.Point(115, 78);
-            this.txtRazaoSocial.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRazaoSocial.Margin = new System.Windows.Forms.Padding(2);
             this.txtRazaoSocial.Name = "txtRazaoSocial";
             this.txtRazaoSocial.Size = new System.Drawing.Size(304, 20);
             this.txtRazaoSocial.TabIndex = 4;
@@ -90,7 +89,7 @@ namespace prjBanco
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(115, 114);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(304, 20);
             this.txtEmail.TabIndex = 5;
@@ -99,7 +98,7 @@ namespace prjBanco
             // 
             this.btnCadastrar.Location = new System.Drawing.Point(115, 170);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(112, 23);
+            this.btnCadastrar.Size = new System.Drawing.Size(108, 33);
             this.btnCadastrar.TabIndex = 6;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
@@ -109,7 +108,7 @@ namespace prjBanco
             // 
             this.btnSair.Location = new System.Drawing.Point(307, 170);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(112, 23);
+            this.btnSair.Size = new System.Drawing.Size(108, 33);
             this.btnSair.TabIndex = 7;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
@@ -128,7 +127,7 @@ namespace prjBanco
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblRazaoSocial);
             this.Controls.Add(this.lblID);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmSalvar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Salvar";

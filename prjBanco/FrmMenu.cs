@@ -20,16 +20,7 @@ namespace prjBanco
 
         private void salvarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //manter apenas um único form aberto
-            if(Application.OpenForms.OfType<frmSalvar>().Count() > 0)
-            {
-                Application.OpenForms.OfType<frmSalvar>().First().Focus();
-            }
-            else
-            {
-                frmSalvar frms = new frmSalvar();
-                frms.Show();
-            }
+            
         }
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
@@ -44,6 +35,34 @@ namespace prjBanco
 
             }
             
+        }
+
+        private void cadastroFornecedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //manter apenas um único form aberto
+            if (Application.OpenForms.OfType<frmSalvar>().Count() > 0)
+            {
+                Application.OpenForms.OfType<frmSalvar>().First().Focus();
+            }
+            else
+            {
+                frmSalvar frms = new frmSalvar();
+                frms.Show();
+            }
+        }
+
+        private void cadastroClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //manter apenas um único form aberto
+            if (Application.OpenForms.OfType<frmCliente>().Count() > 0)
+            {
+                Application.OpenForms.OfType<frmCliente>().First().Focus();
+            }
+            else
+            {
+                frmCliente frmc = new frmCliente();
+                frmc.Show();
+            }
         }
     }
 }

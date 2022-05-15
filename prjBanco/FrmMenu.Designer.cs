@@ -33,6 +33,8 @@ namespace prjBanco
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.salvarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroFornecedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,10 +53,13 @@ namespace prjBanco
             // 
             // salvarToolStripMenuItem
             // 
+            this.salvarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastroClienteToolStripMenuItem,
+            this.cadastroFornecedorToolStripMenuItem});
             this.salvarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("salvarToolStripMenuItem.Image")));
             this.salvarToolStripMenuItem.Name = "salvarToolStripMenuItem";
-            this.salvarToolStripMenuItem.Size = new System.Drawing.Size(149, 24);
-            this.salvarToolStripMenuItem.Text = "Cadastro Fornecedor";
+            this.salvarToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
+            this.salvarToolStripMenuItem.Text = "Cadastros";
             this.salvarToolStripMenuItem.Click += new System.EventHandler(this.salvarToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
@@ -65,6 +70,20 @@ namespace prjBanco
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
+            // cadastroClienteToolStripMenuItem
+            // 
+            this.cadastroClienteToolStripMenuItem.Name = "cadastroClienteToolStripMenuItem";
+            this.cadastroClienteToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.cadastroClienteToolStripMenuItem.Text = "Cadastro Cliente";
+            this.cadastroClienteToolStripMenuItem.Click += new System.EventHandler(this.cadastroClienteToolStripMenuItem_Click);
+            // 
+            // cadastroFornecedorToolStripMenuItem
+            // 
+            this.cadastroFornecedorToolStripMenuItem.Name = "cadastroFornecedorToolStripMenuItem";
+            this.cadastroFornecedorToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.cadastroFornecedorToolStripMenuItem.Text = "Cadastro Fornecedor";
+            this.cadastroFornecedorToolStripMenuItem.Click += new System.EventHandler(this.cadastroFornecedorToolStripMenuItem_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -73,7 +92,7 @@ namespace prjBanco
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmMenu";
             this.Text = "Menu";
             this.menuStrip1.ResumeLayout(false);
@@ -88,6 +107,8 @@ namespace prjBanco
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem salvarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastroClienteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastroFornecedorToolStripMenuItem;
     }
 }
 
